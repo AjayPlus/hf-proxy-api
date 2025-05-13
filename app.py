@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-HF_API_URL = "https://api-inference.huggingface.co/models/AjayPlus/propaganda-detector"
+HF_API_URL = "https://api-inference.huggingface.co/models/AjayPlus/propaganda-detector-v2"
 HF_TOKEN = os.environ.get("HF_TOKEN")
 
 @app.route("/", methods=["GET"])
